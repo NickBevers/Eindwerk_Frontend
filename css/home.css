@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.container{
+    width: 400px;
+    height: 720px;
+    max-width: 400px;
+    max-height: 720px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(12, 60px);
+    border: 1px solid black;
+    background-color: #e7e7e7;
+}
+
+.logo{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#logo_vector{
+    width: 15%;
+}
+
+.coins{
+    grid-row: 2 / span 2;
+    font-size: 5em;
+    font-family: 'Lato', sans-serif;
+    align-self: center;
+    justify-self: center;
+    color: #3A0CA3;
+}
+
+.send{
+    grid-row: 4 / span 2;
+    padding-top: 0.2em;
+    width: 70%;
+    height: 60px;
+    align-self: center;
+    justify-self: center;
+    background-color: #FF7446;
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Lato', sans-serif;
+    border-radius: 5px;
+    color: #241838;
+}
+
+.transaction_history{
+    grid-row: 6/ span 6;
+    background-color: #8478F5;
+    height: 105%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.transaction_list{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.transaction{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #e7e7e7;
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    justify-content: space-between;
+}
+
+.amount{
+    width: 20%;
+}
+
+.from_to{
+    width: 30%;
+}
+
+.date{
+    width: 35%;
+}
+
+.message{
+    color: #FF7446;
+    width: 15%;
+    padding-left: 5%;
+}
+
+.sent{
+    color: #FF7446;
+}
+
+hr{
+    width: 90%;
+    border-width: 2px;
+    color: #e7e7e7;
+    border-color: #e7e7e7;
+}
+
+.nav{
+    grid-row: 12 / span 1;
+    height: 95%;
+    align-self: end;
+    display: flex;
+    place-items: center;
+    justify-content: space-around;
+    background-color: #3A0CA3;
+}
+
+.nav i{
+    color: #FF7446;
+} 

@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.container{
+    width: 400px;
+    height: 720px;
+    max-width: 400px;
+    max-height: 720px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(12, 60px);
+    border: 1px solid black;
+    background-color: #e7e7e7;
+}
+
+.logo{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#logo_vector{
+    width: 19%;
+}
+
+.send{
+    grid-row: 1 / 1;
+    padding-top: 0.2em;
+    width: 70%;
+    height: 60px;
+    align-self: center;
+    justify-self: end;
+    background-color: #FF7446;
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Lato', sans-serif;
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    color: #241838;
+    font-weight: bold;
+}
+
+
+.transaction_history{
+    grid-row: 3/ span 9;
+    background-color: #8478F5;
+    height: 105%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.transaction_list{
+    width: 100%;
+    height: 100%;
+}
+
+.transaction{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #e7e7e7;
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    justify-content: space-between;
+}
+
+.amount{
+    width: 20%;
+}
+
+.from_to{
+    width: 30%;
+}
+
+.date{
+    width: 35%;
+}
+
+.message{
+    color: #FF7446;
+    width: 15%;
+    padding-left: 5%;
+}
+
+.sent{
+    color: #FF7446;
+}
+
+hr{
+    width: 90%;
+    border-width: 2px;
+    color: #e7e7e7;
+    border-color: #e7e7e7;
+}
+
+.nav{
+    grid-row: 12 / span 1;
+    height: 95%;
+    align-self: end;
+    display: flex;
+    place-items: center;
+    justify-content: space-around;
+    background-color: #3A0CA3;
+}
+
+.nav i{
+    color: #FF7446;
+} 

@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.container{
+    width: 400px;
+    height: 720px;
+    max-width: 400px;
+    max-height: 720px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(12, 60px);
+    border: 1px solid black;
+    background-color: #e7e7e7;
+}
+
+.logo{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#logo_vector{
+    width: 15%;
+}
+
+.product{
+    width: 100%;
+    grid-row: 2 / span 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+.product img{
+    max-width: 62%;
+}
+
+.product .title{
+    margin-top: 10px;
+}
+
+.product .description{
+    word-wrap: normal;
+    width: 70%;
+    margin-top: 20px;
+}
+
+.productForm{
+    grid-row: 8 / span 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Lato', sans-serif;
+    margin-top: 40px;
+}
+
+.productForm ::placeholder{
+    opacity: 1;
+    color: white;
+}
+
+.amount{
+    width: 80%;
+    height: 50px;
+    border: none;
+    background-color: #8478F5;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.customDrop{
+    width: 80%;
+    position: relative;
+}
+
+.customDrop select{
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: #8478F5;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    
+}
+
+.customDropArrow{
+    position: absolute;
+    width: 3em;
+    height: 100%;
+    display: block;
+    background: url("../assets/chevron-down-solid.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+
+#size *{
+    background-color: #b0a7ff;
+    color: #3A0CA3;
+    font-size: 15px;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+.productForm select{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.productForm button{
+    width: 50%;
+    height: 50px;
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    background-color: #FF7446;
+    color: #241838;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.nav{
+    grid-row: 12 / span 1;
+    height: 95%;
+    align-self: end;
+    display: flex;
+    place-items: center;
+    justify-content: space-around;
+    background-color: #3A0CA3;
+}
+
+.nav i{
+    color: #FF7446;
+} 
